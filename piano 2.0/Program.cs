@@ -79,11 +79,10 @@ namespace Piano
         }
         static void piano()
         {
-            int p = 1000;
             int o = 1; //banyak oktaf
             tutshitam(o);
             tutsbawahhitam(o);
-            tutspalingbawah(o, p);
+            tutspalingbawah(o);
 
             bool key = true;
             while (key == true)
@@ -94,117 +93,117 @@ namespace Piano
                         Console.Clear();
                         tutshitam(o);
                         tutsbawahhitam(o);
-                        tekana(o, p);
+                        tekana(o);
                         var dobawah = new System.Windows.Media.MediaPlayer();
-                        dobawah.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Do Bawah.wav"));
+                        dobawah.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Do Bawah.wav"));
                         dobawah.Play();
                         break;
                     case ConsoleKey.S://d
                         Console.Clear();
                         tutshitam(o);
                         tutsbawahhitam(o);
-                        tekans(o, p);
+                        tekans(o);
                         var re = new System.Windows.Media.MediaPlayer();
-                        re.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Re Bawah.wav"));
+                        re.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Re Bawah.wav"));
                         re.Play();
                         break;
                     case ConsoleKey.D://e
                         Console.Clear();
                         tutshitam(o);
                         tutsbawahhitam(o);
-                        tekand(o, p);
+                        tekand(o);
                         var mi = new System.Windows.Media.MediaPlayer();
-                        mi.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Mi Bawah.wav"));
+                        mi.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Mi Bawah.wav"));
                         mi.Play();
                         break;
                     case ConsoleKey.F://f
                         Console.Clear();
                         tutshitam(o);
                         tutsbawahhitam(o);
-                        tekanf(o, p);
+                        tekanf(o);
                         var fa = new System.Windows.Media.MediaPlayer();
-                        fa.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Fa Bawah.wav"));
+                        fa.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Fa Bawah.wav"));
                         fa.Play();
                         break;
                     case ConsoleKey.G://g
                         Console.Clear();
                         tutshitam(o);
                         tutsbawahhitam(o);
-                        tekang(o, p);
+                        tekang(o);
                         var Sol = new System.Windows.Media.MediaPlayer();
-                        Sol.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Sol Bawah.wav"));
+                        Sol.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Sol Bawah.wav"));
                         Sol.Play();
                         break;
                     case ConsoleKey.H://a
                         Console.Clear();
                         tutshitam(o);
                         tutsbawahhitam(o);
-                        tekanh(o, p);
+                        tekanh(o);
                         var la = new System.Windows.Media.MediaPlayer();
-                        la.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\La Bawah.wav"));
+                        la.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\La Bawah.wav"));
                         la.Play();
                         break;
                     case ConsoleKey.J://b
                         Console.Clear();
                         tutshitam(o);
                         tutsbawahhitam(o);
-                        tekanj(o, p);
+                        tekanj(o);
                         var si = new System.Windows.Media.MediaPlayer();
-                        si.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Si Bawah.wav"));
+                        si.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Si Bawah.wav"));
                         si.Play();
                         break;
                     case ConsoleKey.K://c'
                         Console.Clear();
                         tutshitam(o);
                         tutsbawahhitam(o);
-                        tekank(o, p);
+                        tekank(o);
                         var doatas = new System.Windows.Media.MediaPlayer();
-                        doatas.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Do Octave 2.wav"));
+                        doatas.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Do Octave 2.wav"));
                         doatas.Play();
                         break;
                     case ConsoleKey.W://c#
                         Console.Clear();
                         tekanw(o);
                         tutsbawahhitam(o);
-                        tutspalingbawah(o, p);
+                        tutspalingbawah(o);
                         var atas1 = new System.Windows.Media.MediaPlayer();
-                        atas1.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\1.wav"));
+                        atas1.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\1.wav"));
                         atas1.Play();
                         break;
                     case ConsoleKey.E://d#
                         Console.Clear();
                         tekane(o);
                         tutsbawahhitam(o);
-                        tutspalingbawah(o, p);
+                        tutspalingbawah(o);
                         var atas2 = new System.Windows.Media.MediaPlayer();
-                        atas2.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\2.wav"));
+                        atas2.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\2.wav"));
                         atas2.Play(); ;
                         break;
                     case ConsoleKey.T://f#
                         Console.Clear();
                         tekant(o);
                         tutsbawahhitam(o);
-                        tutspalingbawah(o, p);
+                        tutspalingbawah(o);
                         var atas3 = new System.Windows.Media.MediaPlayer();
-                        atas3.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\3.wav"));
+                        atas3.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\3.wav"));
                         atas3.Play();
                         break;
                     case ConsoleKey.Y://a#
                         Console.Clear();
                         tekany(o);
                         tutsbawahhitam(o);
-                        tutspalingbawah(o, p);
+                        tutspalingbawah(o);
                         var atas4 = new System.Windows.Media.MediaPlayer();
-                        atas4.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\4.wav"));
+                        atas4.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\4.wav"));
                         atas4.Play();
                         break;
                     case ConsoleKey.U://b#
                         Console.Clear();
                         tekanu(o);
                         tutsbawahhitam(o);
-                        tutspalingbawah(o, p);
+                        tutspalingbawah(o);
                         var atas5 = new System.Windows.Media.MediaPlayer();
-                        atas5.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\5.wav"));
+                        atas5.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\5.wav"));
                         atas5.Play();
                         break;
                     case ConsoleKey.Escape:
@@ -243,45 +242,23 @@ namespace Piano
                         }
                         else //if (j == 0 || j == 1 || j == 3 || j == 5 || j == 7 || j == 9 || j == 10 || j == 12 || j == 13 || j == 15 || j == 17 || j == 19)
                         {
-                            if (k > 0 && j == 0)
+                            if (i == 2)
                             {
-                                Console.Write("");
-                            }
-                            else
-                            {
-                                if (i == 2)
+                                if (j == 3 || j == 7 || j == 15 || j == 19 || j == 23)
                                 {
-                                    if (j == 3 || j == 7 || j == 15 || j == 19 || j == 23)
+                                    Console.Write(hitam);
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write(hitam);
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'F';
                                     }
-                                    else
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'A';
                                     }
-                                }
-                                else if (i == 3)
-                                {
-                                    if (j == 3 || j == 7 || j == 15 || j == 19 || j == 23)
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write("#");
-                                    }
-                                    else
-                                    {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
                                 else
@@ -289,6 +266,22 @@ namespace Piano
                                     Console.Write(" ");
                                 }
                             }
+                            else if (i == 3)
+                            {
+                                if (j == 3 || j == 7 || j == 15 || j == 19 || j == 23)
+                                {
+                                    Console.Write("#");
+                                }
+                                else
+                                {
+                                    Console.Write(" ");
+                                }
+                            }
+                            else
+                            {
+                                Console.Write(" ");
+                            }
+
                         }
                     }
                 }
@@ -312,11 +305,7 @@ namespace Piano
                     }
                     else //if (j == 0 || j == 1 || j == 3 || j == 5 || j == 7 || j == 9 || j == 10 || j == 12 || j == 13 || j == 15 || j == 17 || j == 19)*/*/*/
                     {
-                        if (k > 0 && j == 0)
-                        {
-                            Console.Write("");
-                        }
-                        else if (j % 2 == 0 || j == 1 || j == 5 || j == 9 || j == 13 || j == 17 || j == 21 || j == 25 || j == 27 || j == 29)
+                        if (j % 2 == 0 || j == 1 || j == 5 || j == 9 || j == 13 || j == 17 || j == 21 || j == 25 || j == 27 || j == 29)
                         {
                             Console.Write(" ");
                         }
@@ -330,10 +319,8 @@ namespace Piano
             Console.Write("  |");
             Console.WriteLine();
         }
-
-        static void tutspalingbawah(int o, int y)
+        static void tutspalingbawah(int o)
         {
-            char no = 'C';
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("|");
@@ -341,19 +328,7 @@ namespace Piano
                 {
                     if (i == 3)// tampilan note
                     {
-                        if (y == j)
-                        {
-                            Console.Write(" " + no + " |");
-                        }
-                        else
-                        {
                             Console.Write(" " + " " + " |");
-                        }
-                        no++;
-                        if (no == 'H')
-                        {
-                            no = 'A';
-                        }
                     }
                     else
                     {
@@ -402,66 +377,40 @@ namespace Piano
                         }
                         else //if (j == 0 || j == 1 || j == 3 || j == 5 || j == 7 || j == 9 || j == 10 || j == 12 || j == 13 || j == 15 || j == 17 || j == 19)
                         {
-                            if (k > 0 && j == 0)
+                            if (i == 2)
                             {
-                                Console.Write("");
-                            }
-                            else
-                            {
-                                if (i == 2)
+                                if (j == 7 || j == 15 || j == 19 || j == 23)
                                 {
-                                    if (j == 7 || j == 15 || j == 19 || j == 23)
+                                    Console.Write(hitam);
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write(hitam);
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'F';
                                     }
-                                    else if (j == 3)
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write("/");
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'A';
                                     }
-                                    else
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
-                                else if (i == 3)
+                                else if (j == 3)
                                 {
-                                    if (j == 7 || j == 15 || j == 19 || j == 23)
+                                    Console.Write("/");
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write("#");
+                                        hitam = 'F';
                                     }
-                                    else if (j == 3)
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write("/");
+                                        hitam = 'A';
                                     }
-                                    else
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
                                 else
@@ -469,6 +418,26 @@ namespace Piano
                                     Console.Write(" ");
                                 }
                             }
+                            else if (i == 3)
+                            {
+                                if (j == 7 || j == 15 || j == 19 || j == 23)
+                                {
+                                    Console.Write("#");
+                                }
+                                else if (j == 3)
+                                {
+                                    Console.Write("/");
+                                }
+                                else
+                                {
+                                    Console.Write(" ");
+                                }
+                            }
+                            else
+                            {
+                                Console.Write(" ");
+                            }
+
                         }
                     }
                 }
@@ -503,66 +472,41 @@ namespace Piano
                         }
                         else //if (j == 0 || j == 1 || j == 3 || j == 5 || j == 7 || j == 9 || j == 10 || j == 12 || j == 13 || j == 15 || j == 17 || j == 19)
                         {
-                            if (k > 0 && j == 0)
+
+                            if (i == 2)
                             {
-                                Console.Write("");
-                            }
-                            else
-                            {
-                                if (i == 2)
+                                if (j == 3 || j == 15 || j == 19 || j == 23)
                                 {
-                                    if (j == 3 || j == 15 || j == 19 || j == 23)
+                                    Console.Write(hitam);
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write(hitam);
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'F';
                                     }
-                                    else if (j == 7)
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write("/");
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'A';
                                     }
-                                    else
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
-                                else if (i == 3)
+                                else if (j == 7)
                                 {
-                                    if (j == 3 || j == 15 || j == 19 || j == 23)
+                                    Console.Write("/");
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write("#");
+                                        hitam = 'F';
                                     }
-                                    else if (j == 7)
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write("/");
+                                        hitam = 'A';
                                     }
-                                    else
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
                                 else
@@ -570,6 +514,26 @@ namespace Piano
                                     Console.Write(" ");
                                 }
                             }
+                            else if (i == 3)
+                            {
+                                if (j == 3 || j == 15 || j == 19 || j == 23)
+                                {
+                                    Console.Write("#");
+                                }
+                                else if (j == 7)
+                                {
+                                    Console.Write("/");
+                                }
+                                else
+                                {
+                                    Console.Write(" ");
+                                }
+                            }
+                            else
+                            {
+                                Console.Write(" ");
+                            }
+
                         }
                     }
                 }
@@ -604,66 +568,40 @@ namespace Piano
                         }
                         else //if (j == 0 || j == 1 || j == 3 || j == 5 || j == 7 || j == 9 || j == 10 || j == 12 || j == 13 || j == 15 || j == 17 || j == 19)
                         {
-                            if (k > 0 && j == 0)
+                            if (i == 2)
                             {
-                                Console.Write("");
-                            }
-                            else
-                            {
-                                if (i == 2)
+                                if (j == 3 || j == 7 || j == 19 || j == 23)
                                 {
-                                    if (j == 3 || j == 7 || j == 19 || j == 23)
+                                    Console.Write(hitam);
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write(hitam);
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'F';
                                     }
-                                    else if (j == 15)
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write("/");
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'A';
                                     }
-                                    else
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
-                                else if (i == 3)
+                                else if (j == 15)
                                 {
-                                    if (j == 3 || j == 7 || j == 19 || j == 23)
+                                    Console.Write("/");
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write("#");
+                                        hitam = 'F';
                                     }
-                                    else if (j == 15)
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write("/");
+                                        hitam = 'A';
                                     }
-                                    else
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
                                 else
@@ -671,6 +609,26 @@ namespace Piano
                                     Console.Write(" ");
                                 }
                             }
+                            else if (i == 3)
+                            {
+                                if (j == 3 || j == 7 || j == 19 || j == 23)
+                                {
+                                    Console.Write("#");
+                                }
+                                else if (j == 15)
+                                {
+                                    Console.Write("/");
+                                }
+                                else
+                                {
+                                    Console.Write(" ");
+                                }
+                            }
+                            else
+                            {
+                                Console.Write(" ");
+                            }
+
                         }
                     }
                 }
@@ -705,66 +663,41 @@ namespace Piano
                         }
                         else //if (j == 0 || j == 1 || j == 3 || j == 5 || j == 7 || j == 9 || j == 10 || j == 12 || j == 13 || j == 15 || j == 17 || j == 19)
                         {
-                            if (k > 0 && j == 0)
+
+                            if (i == 2)
                             {
-                                Console.Write("");
-                            }
-                            else
-                            {
-                                if (i == 2)
+                                if (j == 3 || j == 7 || j == 15 || j == 23)
                                 {
-                                    if (j == 3 || j == 7 || j == 15 || j == 23)
+                                    Console.Write(hitam);
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write(hitam);
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'F';
                                     }
-                                    else if (j == 19)
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write("/");
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'A';
                                     }
-                                    else
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
-                                else if (i == 3)
+                                else if (j == 19)
                                 {
-                                    if (j == 3 || j == 7 || j == 15 || j == 23)
+                                    Console.Write("/");
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write("#");
+                                        hitam = 'F';
                                     }
-                                    else if (j == 19)
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write("/");
+                                        hitam = 'A';
                                     }
-                                    else
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
                                 else
@@ -772,6 +705,26 @@ namespace Piano
                                     Console.Write(" ");
                                 }
                             }
+                            else if (i == 3)
+                            {
+                                if (j == 3 || j == 7 || j == 15 || j == 23)
+                                {
+                                    Console.Write("#");
+                                }
+                                else if (j == 19)
+                                {
+                                    Console.Write("/");
+                                }
+                                else
+                                {
+                                    Console.Write(" ");
+                                }
+                            }
+                            else
+                            {
+                                Console.Write(" ");
+                            }
+
                         }
                     }
                 }
@@ -806,66 +759,41 @@ namespace Piano
                         }
                         else //if (j == 0 || j == 1 || j == 3 || j == 5 || j == 7 || j == 9 || j == 10 || j == 12 || j == 13 || j == 15 || j == 17 || j == 19)
                         {
-                            if (k > 0 && j == 0)
+
+                            if (i == 2)
                             {
-                                Console.Write("");
-                            }
-                            else
-                            {
-                                if (i == 2)
+                                if (j == 3 || j == 7 || j == 15 || j == 19)
                                 {
-                                    if (j == 3 || j == 7 || j == 15 || j == 19)
+                                    Console.Write(hitam);
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write(hitam);
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'F';
                                     }
-                                    else if (j == 23)
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write("/");
-                                        hitam++;
-                                        if (hitam == 'E')
-                                        {
-                                            hitam = 'F';
-                                        }
-                                        else if (hitam == 'H')
-                                        {
-                                            hitam = 'A';
-                                        }
-                                        else if (hitam == 'B')
-                                        {
-                                            hitam = 'C';
-                                        }
+                                        hitam = 'A';
                                     }
-                                    else
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
-                                else if (i == 3)
+                                else if (j == 23)
                                 {
-                                    if (j == 3 || j == 7 || j == 15 || j == 19)
+                                    Console.Write("/");
+                                    hitam++;
+                                    if (hitam == 'E')
                                     {
-                                        Console.Write("#");
+                                        hitam = 'F';
                                     }
-                                    else if (j == 23)
+                                    else if (hitam == 'H')
                                     {
-                                        Console.Write("/");
+                                        hitam = 'A';
                                     }
-                                    else
+                                    else if (hitam == 'B')
                                     {
-                                        Console.Write(" ");
+                                        hitam = 'C';
                                     }
                                 }
                                 else
@@ -873,6 +801,26 @@ namespace Piano
                                     Console.Write(" ");
                                 }
                             }
+                            else if (i == 3)
+                            {
+                                if (j == 3 || j == 7 || j == 15 || j == 19)
+                                {
+                                    Console.Write("#");
+                                }
+                                else if (j == 23)
+                                {
+                                    Console.Write("/");
+                                }
+                                else
+                                {
+                                    Console.Write(" ");
+                                }
+                            }
+                            else
+                            {
+                                Console.Write(" ");
+                            }
+
                         }
                     }
                 }
@@ -881,7 +829,7 @@ namespace Piano
             }
             Console.Write("|");
         }
-        static void tekana(int o, int y)
+        static void tekana(int o)
         {
             char no = 'C';
             for (int i = 0; i < 4; i++)
@@ -891,11 +839,7 @@ namespace Piano
                 {
                     if (i == 3)// tampilan note
                     {
-                        if (y == j)
-                        {
-                            Console.Write(" " + no + " |");
-                        }
-                        else if (j == 0)
+                        if (j == 0)
                         {
                             Console.Write("///|");
                         }
@@ -934,9 +878,8 @@ namespace Piano
             }
             Console.Write("|");
         }
-        static void tekans(int o, int y)
+        static void tekans(int o)
         {
-            char no = 'C';
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("|");
@@ -944,11 +887,8 @@ namespace Piano
                 {
                     if (i == 3)// tampilan note
                     {
-                        if (y == j)
-                        {
-                            Console.Write(" " + no + " |");
-                        }
-                        else if (j == 1)
+
+                        if (j == 1)
                         {
                             Console.Write("///|");
                         }
@@ -956,11 +896,7 @@ namespace Piano
                         {
                             Console.Write(" " + " " + " |");
                         }
-                        no++;
-                        if (no == 'H')
-                        {
-                            no = 'A';
-                        }
+
                     }
                     else if (j == 1)
                     {
@@ -987,9 +923,8 @@ namespace Piano
             }
             Console.Write("|");
         }
-        static void tekand(int o, int y)
+        static void tekand(int o)
         {
-            char no = 'C';
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("|");
@@ -997,22 +932,13 @@ namespace Piano
                 {
                     if (i == 3)// tampilan note
                     {
-                        if (y == j)
-                        {
-                            Console.Write(" " + no + " |");
-                        }
-                        else if (j == 2)
+                        if (j == 2)
                         {
                             Console.Write("///|");
                         }
                         else
                         {
                             Console.Write(" " + " " + " |");
-                        }
-                        no++;
-                        if (no == 'H')
-                        {
-                            no = 'A';
                         }
                     }
                     else if (j == 2)
@@ -1040,9 +966,8 @@ namespace Piano
             }
             Console.Write("|");
         }
-        static void tekanf(int o, int y)
+        static void tekanf(int o)
         {
-            char no = 'C';
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("|");
@@ -1050,22 +975,13 @@ namespace Piano
                 {
                     if (i == 3)// tampilan note
                     {
-                        if (y == j)
-                        {
-                            Console.Write(" " + no + " |");
-                        }
-                        else if (j == 3)
+                        if (j == 3)
                         {
                             Console.Write("///|");
                         }
                         else
                         {
                             Console.Write(" " + " " + " |");
-                        }
-                        no++;
-                        if (no == 'H')
-                        {
-                            no = 'A';
                         }
                     }
                     else if (j == 3)
@@ -1093,9 +1009,8 @@ namespace Piano
             }
             Console.Write("|");
         }
-        static void tekang(int o, int y)
+        static void tekang(int o)
         {
-            char no = 'C';
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("|");
@@ -1103,22 +1018,13 @@ namespace Piano
                 {
                     if (i == 3)// tampilan note
                     {
-                        if (y == j)
-                        {
-                            Console.Write(" " + no + " |");
-                        }
-                        else if (j == 4)
+                        if (j == 4)
                         {
                             Console.Write("///|");
                         }
                         else
                         {
                             Console.Write(" " + " " + " |");
-                        }
-                        no++;
-                        if (no == 'H')
-                        {
-                            no = 'A';
                         }
                     }
                     else if (j == 4)
@@ -1146,9 +1052,8 @@ namespace Piano
             }
             Console.Write("|");
         }
-        static void tekanh(int o, int y)
+        static void tekanh(int o)
         {
-            char no = 'C';
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("|");
@@ -1156,22 +1061,13 @@ namespace Piano
                 {
                     if (i == 3)// tampilan note
                     {
-                        if (y == j)
-                        {
-                            Console.Write(" " + no + " |");
-                        }
-                        else if (j == 5)
+                        if (j == 5)
                         {
                             Console.Write("///|");
                         }
                         else
                         {
                             Console.Write(" " + " " + " |");
-                        }
-                        no++;
-                        if (no == 'H')
-                        {
-                            no = 'A';
                         }
                     }
                     else if (j == 5)
@@ -1199,9 +1095,8 @@ namespace Piano
             }
             Console.Write("|");
         }
-        static void tekanj(int o, int y)
+        static void tekanj(int o)
         {
-            char no = 'C';
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("|");
@@ -1209,22 +1104,13 @@ namespace Piano
                 {
                     if (i == 3)// tampilan note
                     {
-                        if (y == j)
-                        {
-                            Console.Write(" " + no + " |");
-                        }
-                        else if (j == 6)
+                        if (j == 6)
                         {
                             Console.Write("///|");
                         }
                         else
                         {
                             Console.Write(" " + " " + " |");
-                        }
-                        no++;
-                        if (no == 'H')
-                        {
-                            no = 'A';
                         }
                     }
                     else if (j == 6)
@@ -1256,9 +1142,8 @@ namespace Piano
             }
             Console.Write("|");
         }
-        static void tekank(int o, int y)
+        static void tekank(int o)
         {
-            char no = 'C';
             for (int i = 0; i < 4; i++)
             {
                 Console.Write("|");
@@ -1266,22 +1151,13 @@ namespace Piano
                 {
                     if (i == 3)// tampilan note
                     {
-                        if (y == j)
-                        {
-                            Console.Write(" " + no + " |");
-                        }
-                        else if (j == 7)
+                        if (j == 7)
                         {
                             Console.Write("///|");
                         }
                         else
                         {
                             Console.Write(" " + " " + " |");
-                        }
-                        no++;
-                        if (no == 'H')
-                        {
-                            no = 'A';
                         }
                     }
                     else if (j == 7)
@@ -1376,7 +1252,7 @@ _______________¶¶¶¶¶¶¶¶___¶¶¶¶¶¶¶¶
                 Console.Clear();
                 Console.WriteLine(hbd);
                 var happybd = new System.Windows.Media.MediaPlayer();
-                happybd.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Happy Birthday to You - piano instrumental with lyrics.wav"));
+                happybd.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Happy Birthday to You - piano instrumental with lyrics.wav"));
                 happybd.Play();
                 Console.ReadKey();
             }
@@ -1413,7 +1289,7 @@ _______________¶¶¶¶¶¶¶¶___¶¶¶¶¶¶¶¶
                 Console.Clear();
                 Console.WriteLine(mario);
                 var mariobros = new System.Windows.Media.MediaPlayer();
-                mariobros.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Super Mario Theme - EASY Piano Tutorial by PlutaX.wav"));
+                mariobros.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Super Mario Theme - EASY Piano Tutorial by PlutaX.wav"));
                 mariobros.Play();
                 Console.ReadKey();
             }
@@ -1442,14 +1318,13 @@ _______________¶¶¶¶¶¶¶¶___¶¶¶¶¶¶¶¶
                 Console.Clear();
                 Console.WriteLine(tetris);
                 var tettris = new System.Windows.Media.MediaPlayer();
-                tettris.Open(new System.Uri(@"D:\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Tetris Theme - Korobeiniki [Piano Tutorial] (Synthesia).wav"));
+                tettris.Open(new System.Uri(@"C:\Jonathan\UC\Algorithma\SAA\Buat_Piano-Pianoo\Buat_Piano-Pianoo\piano 2.0\piano 2.0\Resources\Tetris Theme - Korobeiniki [Piano Tutorial] (Synthesia).wav"));
                 tettris.Play();
                 Console.ReadKey();
             }
 
 
         }
-
         static void exit()
         {
             Console.Clear();
